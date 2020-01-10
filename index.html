@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap&subset=cyrillic,vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Test</title>
+  </head>
+  <body>
+    <header class="header-conteiner">
+      <div class="logo-section">
+        <img src="./img/logo-img.png" alt="logoImage" class="logo-img" />
+        <div class="logo">
+          <a href="#" class="page-logo">NetHunt</a>
+          <p class="page-logo__paragraph">CRM</p>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <p class="paragraph">A free e-book</p>
+
+      <p class="title">
+        CRM from A to Z. </br>
+        How to choose the right CRM for your business
+      </p>
+      <p class="title-paragraph">Written for you by the Net-Hunt team</p>
+      <p class="title-paragraph__descr">Customer Relationship Management (CRM) systems are essential to any business. 
+        CRM helps to organize work with customers, automate the sales process, improve the 
+        clients experience and close deals faster. So why do thousands of companies remain fans 
+        of Excel spreadsheets?
+      </p>
+      <p class="title-paragraph__list">Here are three of the most obvious reasons:</p>
+      <p class="title-paragraph__listItem"><span class="list-span">1.</span>They have never tried working with CRM</p>
+     <div class="book-wrapper">
+       <div class="book">
+         <div class="book-image"></div>
+       </div>
+     </div>
+
+      <div class="wrapper-backgroundImg"><div class="background-img"></div></div>
+    <div class="wrapper-download__btn">
+      <div class="download-btn"></div>
+      <img src="./img/downArrow-svg.svg" class="download-btn__svg"/>   
+    </div>
+      <div class="download-form">
+        <p class="download-form__paragraph">I am ready to download the e-book</p>
+      
+        <form
+          class="form"
+          action=""
+          method="POST"
+          onsubmit="return FormValidation();"
+        >
+        <label for="nameInput" class="input-label">Name </label>
+          <input
+            class="nameInput"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+          />
+          <label for="emailInput" class="input-label">Email </label>
+          <input
+            class="emailInput"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+          <label for="companyInput" class="input-label">Company </label>
+          <input
+            class="companyInput"
+            type="text"
+            name="company"
+            required
+            minlength="3"
+            pattern="[A-Za-z\\s]*"
+            placeholder="Enter the name of your company"
+            required
+          />
+          <button type="submit" class="btn">Download e-book
+          <img src="./img/downArrow-svg.svg" class="svg"/>   
+          </button>
+        </form>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

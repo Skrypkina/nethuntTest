@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Header */
+
+.header-conteiner {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding-left: 20px;
+  padding-top: 30px;
+  height: 80px;
+}
+
+.page-logo {
+  color: #141f33;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.page-logo__paragraph {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  text-align: right;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Main container */
+
+.main-container {
+  background-color: #f3f3f3;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.paragraph {
+  color: #00aeef;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #141f33;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-family: "Open Sans";
+}
+
+.title-paragraph {
+  color: #fa983f;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+.background-img {
+  display: block;
+  width: 40px;
+  height: 150px;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  clip-path: polygon(100% 8%, 99% 56%, 100% 100%, 43% 80%, 91% 77%, 0 0);
+  background-image: url("../img/mobile2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 85%;
+  top: -10px;
+}
+.download-form {
+  display: block;
+  z-index: 999;
+  width: 280px;
+  height: 400px;
+  position: relative;
+  border-radius: 14px;
+  filter: drop-shadow(6.47px 24.148px 30px rgba(67, 103, 138, 0.25));
+  background-color: #ffffff;
+  padding: 20px;
+}
+.download-form__paragraph {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  font-family: "Open Sans";
+}
+.input-label {
+  color: #6d6d6d;
+  font-weight: 600;
+}
+.nameInput,
+.emailInput,
+.companyInput {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 44px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.nameInput {
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 44px;
+  background-color: #ffb100;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: transparent;
+  line-height: 44px;
+}
+.wrapper-backgroundImg {
+  position: relative;
+}
+
+.svg {
+  width: 18px;
+  height: 18px;
+  filter: invert(10);
+  display: inline-block;
+  letter-spacing: 1.5px;
+}
+.download-btn {
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+  filter: drop-shadow(7.5px 12.99px 15px rgba(247, 131, 109, 0.35));
+  background-image: linear-gradient(-30deg, #f7836d 0%, #ffb100 100%);
+  position: absolute;
+  top: -300px;
+  left: 83%;
+}
+
+.wrapper-download__btn {
+  position: relative;
+}
+.download-btn__svg {
+  width: 20px;
+  height: 22px;
+  filter: invert(10);
+  position: absolute;
+  top: -291px;
+  left: 88%;
+}
+.title-paragraph__descr {
+  display: none;
+  width: 0;
+}
+.book {
+  display: none;
+  width: 0;
+}
+.book-image {
+  display: none;
+  width: 0;
+}
+.title-paragraph__list {
+  display: none;
+  width: 0;
+}
+.title-paragraph__listItem {
+  display: none;
+  width: 0;
+}
+@media (min-width: 1200px) {
+  /* Header */
+  .header-conteiner {
+    width: 1200px;
+    padding-left: 40px;
+    background-color: #ffffff;
+    height: 160px;
+    padding-top: 50px;
+  }
+  .page-logo {
+    font-size: 30px;
+  }
+  .page-logo__paragraph {
+    font-size: 14px;
+  }
+  .logo-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* main */
+  .main-container {
+    width: 1200px;
+    padding-left: 40px;
+    background-color: #ffffff;
+  }
+  .background-img {
+    display: none;
+    width: 0;
+  }
+  .download-btn__svg {
+    display: none;
+    width: 0;
+  }
+  .download-btn {
+    display: none;
+    width: 0;
+  }
+  .title-paragraph__descr {
+    display: unset;
+    width: unset;
+    font-size: 16px;
+    line-height: 28px;
+    color: #141f33;
+    font-weight: 400;
+    margin-bottom: 49px;
+    display: block;
+    width: 580px;
+    margin-bottom: 50px;
+  }
+  .paragraph {
+    margin-bottom: 39px;
+    font-size: 18px;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 800;
+    display: block;
+    width: 650px;
+  }
+  .title-paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .book {
+    display: block;
+    width: 500px;
+    height: 800px;
+    background-color: #e1eef8;
+    position: absolute;
+    top: -780px;
+    left: 67%;
+  }
+  .book-image {
+    background-image: url("../img/book7.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 10%;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    width: 240px;
+    height: 420px;
+    top: 8%;
+    left: 30%;
+    transform: rotate(-30deg);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
+
+  .download-form {
+    width: 400px;
+    height: 560px;
+    padding-top: 50px;
+    border-radius: 2px;
+    position: absolute;
+    top: 24%;
+    left: 58%;
+  }
+  .download-form__paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+    text-align: center;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+  .nameInput,
+  .emailInput,
+  .companyInput {
+    width: 300px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #bababa;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-left: 30px;
+  }
+  .btn {
+    width: 300px;
+    height: 54px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    border-radius: 5px;
+    filter: drop-shadow(7.5px 12.99px 15px rgba(247, 131, 109, 0.35));
+    background-image: linear-gradient(-30deg, #f7836d 0%, #ffb100 100%);
+  }
+  .input-label {
+    padding-left: 30px;
+  }
+  .book-wrapper {
+    position: relative;
+  }
+  .title-paragraph__list {
+    display: block;
+    width: unset;
+    font-size: 20px;
+    line-height: 30px;
+    color: #141f33;
+    font-family: "Open Sans";
+    font-weight: 800;
+    margin-bottom: 36px;
+  }
+  .title-paragraph__listItem {
+    display: block;
+    width: unset;
+    ont-size: 16px;
+    line-height: 24px;
+    color: #141f33;
+  }
+  .list-span {
+    font-weight: 800;
+  }
+}
